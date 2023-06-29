@@ -1,10 +1,4 @@
-// This is the entry point of your Rust library.
-// When adding new code to your project, note that only items used
-// here will be transformed to their Dart equivalents.
-
-// A plain enum without any fields. This is similar to Dart- or C-style enums.
-// flutter_rust_bridge is capable of generating code for enums with fields
-// (@freezed classes in Dart and tagged unions in C).
+//note that only items used here will be transformed to their Dart equivalents.
 pub enum Platform {
     Unknown,
     Android,
@@ -16,8 +10,6 @@ pub enum Platform {
     Wasm,
 }
 
-// A function definition in Rust. Similar to Dart, the return type must always be named
-// and is never inferred.
 pub fn platform() -> Platform {
     // This is a macro, a special expression that expands into code. In Rust, all macros
     // end with an exclamation mark and can be invoked with all kinds of brackets (parentheses,
